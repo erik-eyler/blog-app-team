@@ -5,7 +5,8 @@ const Post = new Schema(
     {
         title: { type: String, required: true },
         body: { type: String, required: true },
-        author: { type: String, required: true },
+        authorFirstName: { type: String, required: true },
+        authorLastName: { type: String, required: true },
         imgUrl: { type: String, required: false}
     },
     { timestamps: true },
