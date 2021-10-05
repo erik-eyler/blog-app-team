@@ -1,7 +1,9 @@
-const Layout = () => {
+const Layout = (props) => {
   return (
     <div>
-      <p>Layout Component</p>
+      <div className="layout-children"> 
+        {props.children}
+      </div>
     </div>
   )
 }
