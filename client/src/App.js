@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/posts">
           <Home />
         </Route>
         <Route path="/posts/:id">
