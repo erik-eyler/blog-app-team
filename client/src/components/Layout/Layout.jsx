@@ -1,7 +1,7 @@
 const Layout = () => {
   return (
     <div>
-      Layout
+      <p>Layout Component</p>
     </div>
   )
 }
