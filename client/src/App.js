@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Home from './screens/Home/Home'
-import Edit from './screens/Edit/Edit'
+import Details from './screens/Details/Details'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/posts/:id">
-          <Edit />
+          <Details />
         </Route>
       </Switch>
 

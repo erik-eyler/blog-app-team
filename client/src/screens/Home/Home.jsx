@@ -16,7 +16,7 @@ const Home = () => {
     fetchPosts()
   }, [])
 
-  console.log(posts)
+  // console.log(posts)
 
   if(loading) {<div>Loading...</div>}
 
@@ -26,8 +26,8 @@ const Home = () => {
       <div className='posts'>
         {posts.map((post, index) => {
           return (
-            <Link to={`/posts/${post._id}`}>
-              <div className="blog-card" key={index}>
+            <Link key={index} to={`/posts/${post._id}`}>
+              <div className="blog-card" >
                 <h4>{post.title}</h4>
                 <div className="author">{`${post.authorFirstName} ${post.authorLastName}`}</div>
               </div>
