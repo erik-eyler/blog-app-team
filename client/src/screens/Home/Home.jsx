@@ -23,7 +23,8 @@ const Home = () => {
 
   return (
     <Layout>
-      <h1>This is the Home Page</h1>
+      <h1 className="logo">The Pier</h1>
+      <h4>(Stick around and drop us a line)</h4>
       <div className='posts'>
         {posts.map((post, index) => {
           return (
