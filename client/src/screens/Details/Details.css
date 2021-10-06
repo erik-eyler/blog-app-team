@@ -1,0 +1,25 @@
+.details-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.detail-img img {
+  width: 500px;
+  height: auto;
+}
+
+.detail-text {
+  margin: 10px;
+  max-width: 80%;
+}
+
+p, h4 {
+  text-align: left;
+}
+
+.body {
+  text-align: left;
+}
