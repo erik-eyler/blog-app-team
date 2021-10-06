@@ -24,14 +24,15 @@ const Home = () => {
   return (
     <Layout>
       <h1 className="logo">The Pier</h1>
-      <h4>(Stick around and drop us a line)</h4>
+      <h4 className="subtitle">(Stick around and drop us a line)</h4>
       <div className='posts'>
         {posts.map((post, index) => {
           return (
             <Link key={index} to={`/posts/${post._id}`}>
               <div className="blog-card" >
-                <h4>{post.title}</h4>
-                <div className="author">{`${post.authorFirstName} ${post.authorLastName}`}</div>
+                <div className="blog-card-title">{post.title}</div>
+                <div className="author">By: {`${post.authorFirstName} ${post.authorLastName}`}</div>
+                <div className="blog-card-body">{post.body}</div>
               </div>
             </Link>  
           )

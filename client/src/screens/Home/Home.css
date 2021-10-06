@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 
 .logo {
   color: Black;
-  font-family: 'Pirata One', cursive;
+  font-family: "Pirata One", cursive;
   font-size: 64px;
-  background-image: url('https://i.imgur.com/uY3gbxL.jpg');
+  background-image: url("https://i.imgur.com/uY3gbxL.jpg");
   background-repeat: no-repeat;
   background-size: 100% 300px;
   margin: 0;
   height: 20vh;
+}
+.subtitle {
+  text-align: center;
 }
 
 .posts {
@@ -19,10 +22,37 @@
 }
 
 .blog-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 1px solid lightgray;
   height: 20vh;
   width: 80vw;
   margin: 20px 0;
   border-radius: 20px;
   box-shadow: 0 0 3px 1px gray;
+  background-color: rgb(247, 213, 127);
+}
+
+.blog-card-title {
+  text-align: center;
+  width: 40%;
+  margin: 20px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.author {
+  border: 1px solid black;
+  width: 40%;
+  margin: 20px;
+}
+.blog-card-body {
+  /* justify-content: center; */
+  width: 50%;
+  height: 20%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid black;
+  margin: 20px;
 }
