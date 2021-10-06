@@ -1,3 +1,4 @@
+import './Home.css'
 import { useState, useEffect } from 'react'
 import { getPosts } from '../../services/posts';
 import Layout from '../../components/Layout/Layout';
@@ -21,7 +22,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <div>This is the Home Page</div>
+      <h1>This is the Home Page</h1>
       <div className='posts'>
         {posts.map((post, index) => {
           return (
