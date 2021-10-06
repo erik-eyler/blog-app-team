@@ -1,3 +1,4 @@
+import './Home.css'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getPosts } from '../../services/posts';
@@ -22,7 +23,8 @@ const Home = () => {
 
   return (
     <Layout>
-      <div>This is the Home Page</div>
+      <h1 className="logo">The Pier</h1>
+      <h4>(Stick around and drop us a line)</h4>
       <div className='posts'>
         {posts.map((post, index) => {
           return (

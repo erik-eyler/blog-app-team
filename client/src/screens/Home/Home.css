@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+.logo {
+  color: Black;
+  font-family: 'Pirata One', cursive;
+  font-size: 64px;
+  background-image: url('https://i.imgur.com/uY3gbxL.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  margin: 0;
+  height: 20vh;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  border: 1px solid lightgray;
+  height: 20vh;
+  width: 80vw;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 1px gray;
+}
