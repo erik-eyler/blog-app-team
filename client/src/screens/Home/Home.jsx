@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getPosts } from '../../services/posts';
 import Layout from '../../components/Layout/Layout';
 
@@ -25,7 +26,12 @@ const Home = () => {
       <div className='posts'>
         {posts.map((post, index) => {
           return (
-            <div key={index}>{post.title}</div>
+            <Link to={`/posts/${post._id}`}>
+              <div className="blog-card" key={index}>
+                <h4>{post.title}</h4>
+                <div className="author">{`${post.authorFirstName} ${post.authorLastName}`}</div>
+              </div>
+            </Link>  
           )
         })}
       </div>
